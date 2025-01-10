@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title> Employement Application</title>
+    <link rel="stylesheet" href="css/sm-core-css.css">
+    <link rel="stylesheet" href="css/sm-mint.css">
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel='stylesheet' href='css/app.css'>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Smart menus -->
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <!-- jQuery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- jQuery Validate Additional Methods needed for US Telephone -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!-- Application JavaScript -->
+    <script src='js/app.js'></script>
+</head>
+
+<body>
+    <header>
+        <div id="logindiv">
+            <a href="">login</a>
+        </div>
+        <form action="" id="searchform">
+            <input type="search" name="searchbox" id="searchbox" placeholder="Search" />
+            <button><span class="material-icons"> search </span></button>
+        </form>
+        <a href="index.html" title="Home page">
+            <img src="images/logo.png" alt="A circle logo'." />
+        </a>
+        <h1>Application Place</h1>
+        <p id="tagline">A place to submit your employement application!</p>
+        <nav>
+            <ul id="navigation" class="sm sm-mint">
+                <li><a href='index.html'>Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href='about.html'>About</a>
+                    <ul>
+                        <li><a href="index.html">Who we are</a></li>
+                        <li><a href="index.html">What we do</a></li>
+                        <li><a href="index.html">How we got started</a></li>
+                    </ul>
+                </li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="accordion">
+        <h3>Your Info</h3>
+        <div>
+            <form id="yourInfoForm">
+                <div class="formRow">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div class="formRow">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div class="formRow">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="buttonRow">
+                    <input type="button" name="yourInfoFormButton" id="yourInfoFormButton" value="Next ">
+                </div>
+            </form>
+        </div>
+
+        <h3>Contact Info</h3>
+        <div>
+            <form id="contactInfoForm">
+                <div class="formRow">
+                    <label for="address">Street Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="formRow">
+                    <label for="apt">Apt/Ste</label>
+                    <input type="text" name="apt" id="apt">
+                </div>
+                <div class="formRow">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="formRow">
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state">
+                </div>
+                <div class="formRow">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip">
+                </div>
+                <div class="formRow">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="formRow">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="buttonRow">
+                    <input type="button" name="contactInfoFormButton" id="contactInfoFormButton" value="Next">
+                </div>
+            </form>
+            </div> <!--End of Contact-->
+        
+            <h3>Education Info</h3>
+            <div>
+                <form id="educationInfoForm">
+                    <div class="formRow">
+                        <label for="levelEducation">Highest Level of Education</label>
+                        <input type="text" name="levelEducation" id="levelEducation">
+                    </div>
+                    <div class="formRow">
+                        <label for="schoolName">School Name/Ste</label>
+                        <input type="text" name="schoolName" id="schoolName">
+                    </div>
+                    <div class="formRow">
+                        <label for="graduationYear">Graduation Year</label>
+                        <input type="text" name="graduationYear" id="graduationYear">
+                    </div>
+                    <div class="buttonRow">
+                        <input type="button" name="educationInfoFormButton" id="educationInfoFormButton" value="Next">
+                    </div>
+                </form>
+                </div> <!--End Eduction-->
+
+            <h3>Last Three Jobs</h3>
+            <div>
+                <form id="jobInfoForm">
+                    <div class="formRow">
+                        <label for="title1">Title</label>
+                        <input type="text" name="title1" id="title1">
+                    </div>
+                    <div class="formRow">
+                        <label for="employer1">Employer</label>
+                        <input type="text" name="employer1" id="employer1">
+                    </div>
+                    <div class="formRow">
+                        <label for="startDate1">Start Date</label>
+                        <input type="text" name="startDate1" id="startDate1">
+                    </div>
+                    <div class="formRow">
+                        <label for="endDate1">End Date</label>
+                        <input type="text" name="endDate1" id="endDate1">
+                    </div>
+                    <div class="formRow">
+                        <label for="description1">Description</label>
+                        <input type="text" name="description1" id="description1">
+                    </div>
+                    <br>
+                    <div class="formRow">
+                        <label for="title2">Title</label>
+                        <input type="text" name="title2" id="title2">
+                    </div>
+                    <div class="formRow">
+                        <label for="employer2">Employer</label>
+                        <input type="text" name="employer2" id="employer2">
+                    </div>
+                    <div class="formRow">
+                        <label for="startDate2">Start Date</label>
+                        <input type="text" name="startDate2" id="startDate2">
+                    </div>
+                    <div class="formRow">
+                        <label for="endDate2">End Date</label>
+                        <input type="text" name="endDate2" id="endDate2">
+                    </div>
+                    <div class="formRow">
+                        <label for="description2">Description</label>
+                        <input type="text" name="description2" id="description2">
+                    </div>
+                    <br> 
+                    <div class="formRow">
+                        <label for="title3">Title</label>
+                        <input type="text" name="title3" id="title3">
+                    </div>
+                    <div class="formRow">
+                        <label for="employer3">Employer</label>
+                        <input type="text" name="employer3" id="employer3">
+                    </div>
+                    <div class="formRow">
+                        <label for="startDate3">Start Date</label>
+                        <input type="text" name="startDate3" id="startDate3">
+                    </div>
+                    <div class="formRow">
+                        <label for="endDate3">End Date</label>
+                        <input type="text" name="endDate3" id="endDate3">
+                    </div>
+                    <div class="formRow">
+                        <label for="description3">Description</label>
+                        <input type="text" name="description3" id="description3">
+                    </div>
+
+                    <div class="buttonRow">
+                        <input type="button" name="jobInfoFormButton" id="jobInfoFormButton" value="Next">
+                    </div>
+                </form>
+                </div><!--End Job-->
+
+        <h3>Confirmation</h3>
+        <div>        
+                <input type="button" name="confirmNextButton" id="confirmNextButton" value="Submit Your Application">
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="successDialog" title="Application Registered">
+        <p>Your application has been submitted.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Some Application Center</p>
+    </footer>
+</body>
+
+</html>

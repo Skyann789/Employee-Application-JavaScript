@@ -1,0 +1,159 @@
+/*
+    FILE app.css
+    DATE 2024-11-24
+    AUTHOR Bob Trapp
+    DESCRIPTION
+        Styling for Multipart Form Demo
+*/
+
+/*
+    From https://paletton.com/
+*/
+:root {
+    --color1: #dfff8777;
+    --color1a: #E0FF8732;
+    --color2: #BFFC0C;
+    --color3: #02C400;
+    --color4: #1C2600;
+    --color5: #FFFFFF;
+    --color6: #000000;
+    --color7: #fcf80c;
+    --error: #FF0000;
+    --shadow: #bbdb5c;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color1);
+    color: var(--color4);
+    background-image: linear-gradient(to right, var(--color5), var(--color1));
+}
+
+header {
+    font-family: cursive;
+    font-style: italic;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header #searchform {
+    display: inline-block;
+    float: right;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logindiv {
+    text-align: right;
+    padding-right: 3em;
+}
+
+#logindiv a {
+    color: var(--color4);
+}
+
+#tagline {
+    font-style: italic;
+    padding-left: 2em;
+    margin: 0;
+}
+
+.ui-accordion-header {
+    background-color: var(--color4);
+    background-image: linear-gradient(to bottom, var(--color4), var(--color3));
+    color: var(--color7);
+    padding: 0.25em 1em;
+    font-style: italic;
+    border-radius: 0.25em;
+}
+
+div.ui-accordion-content {
+    background-color: var(--color5);
+    padding-left: 1em;
+    border-radius: 0.25em;
+    box-shadow: 0.25em 0.25em 0.5em var(--shadow);
+}
+
+.formRow {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.formRow label {
+    margin-right: 1em;
+    width: 8em;
+    font-weight: bold;
+}
+
+input {
+    border-color: var(--color4);
+    border-radius: 0.25em;
+}
+
+.buttonRow {
+    text-align: center;
+    padding: 0.2em 2em;
+}
+
+
+label.error {
+    width: 20em;
+    padding-left: 1em;
+    color: var(--error);
+}
+
+label.error::before {
+    content: "* ";
+}
+
+.ui-dialog {
+    border: var(--color4) 0.2em solid;
+    border-radius: 0.5em;
+    background-color: var(--color2);
+    padding: 1em;
+}
+
+/*
+.ui-dialog-titlebar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+*/
+.outputTable {
+    min-width: 50%;
+}
+
+table,
+tr,
+td {
+    border: 1px solid var(--color4);
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.25em 0.5em;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 1.5em;
+    background-image: linear-gradient(to top, var(--color3), var(--color1a));
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+}
